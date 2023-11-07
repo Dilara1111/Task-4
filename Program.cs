@@ -23,9 +23,8 @@ namespace Task4
             //Obyekt yarandıqdan sonra Əgər sürət 110 - dan böyükdürsə ekrana "Suret oldurur" əks halda "Bele davam edin"
             //yazısı çap olunsun
 
-            //  4) User classı olsun, içində fantaziyanıza görə propertylər və əsasstring Name;
-            //string Password;
-            //Propertyləri olsun. Və
+            //  4) User classı olsun, içində fantaziyanıza görə propertylər və əsas string Name;
+            //string Password Propertyləri olsun. Və
             //public bool IsPasswordValid() methodu olsun. Bu method, əgər passvordun uzunluğu 6dan qısadırsa, və ya passwordun daxilində rəqəm
             //yoxdursa və ya əgər Passvordun daxilində Name vardırsa false, əks halda true return eləsin.Valid password uzunluğu 6dan uzun, içində
             //rəqəm olan və userin adının passvordun içində keçmədiyi passvorddur.
@@ -33,8 +32,20 @@ namespace Task4
             
             Person person = new Person("Dilara", "Huseynova", 35);
             Console.WriteLine(person.Name + " " + person.Surname + " " + person.Age + " " + person.IsAdult);
-            //Car car = new Car("Mercedes", "C class", 2015);
-            Console.WriteLine(PrintInfo());
+            mashin mercedes = new mashin("Mercedes", "C class",2015, "oil","white");
+            mashin kia = new mashin("KIA", "cerato", 2020, "oil", "white");
+            mercedes.PrintInfo();
+            kia.PrintInfo();
+            Car1 bmw = new Car1("BMW", "dhjs", 2011, 109,"jhgdf");
+            bmw.PrintSpeed();
+            motosikl moto = new motosikl("APILIA", "MoTo", 2021, 215, "kjhedh");
+            moto.PrintSpeed();
+            bmw.PrintModel();
+            moto.PrintModel();
+            User dilara = new User("Dilara", "kjhsd@lkjds.com", "Dilara");
+            dilara.IspassWordValid();
+            
+           
 
 
         }

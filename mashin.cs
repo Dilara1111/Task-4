@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Task4
 {
-    internal class Car
+    internal class mashin
     {
         public string Brend;
         public string Model;
         public short Year;
         public string Fueltype;
         public string Color;
-        public Car(string brend, string model, short year, string fueltype, string color )
+        public mashin(string brend, string model, short year, string fueltype, string color)
         {
             Brend = brend;
             Model = model;
             Year = year;
             Fueltype = fueltype;
             Color = color;
-  
+
         }
         public void PrintInfo()
         {
