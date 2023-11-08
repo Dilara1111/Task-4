@@ -43,7 +43,8 @@ namespace Task4
             bmw.PrintModel();
             moto.PrintModel();
             User dilara = new User("Dilara", "kjhsd@lkjds.com", "Dilara");
-            dilara.IspassWordValid();
+            Console.WriteLine(dilara.IspassWordValid());
+            
             
            
 

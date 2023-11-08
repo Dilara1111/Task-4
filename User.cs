@@ -19,9 +19,10 @@ namespace Task4
         }
         public bool IspassWordValid()
         {
-            if (Password == Name) 
-            {return false;} 
-            else { return true;}
+            if (Password == Name && Password.Length <= 6)
+            { return false; }
+            else { return true; }
+
         }
     }
 }
